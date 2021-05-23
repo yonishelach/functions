@@ -1,2 +1,14 @@
+wheel
+sphinx
+myst-nb
+sphinx-book-theme
+bs4
 mlrun
+jinja2
+pyyaml
+click
 pipenv
+nuclio-jupyter
+myst_nb
+black
+isort

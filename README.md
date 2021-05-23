@@ -5,7 +5,6 @@ These are functions expected to be run as independent mlrun pipeline compnents, 
 it is expected that contributors follow certain guidelines/protocols (please chip-in).
 
 ## Functions
-
 | function | kind | description | categories |
 | --- | --- | --- | --- |
 | [aggregate](aggregate/aggregate.ipynb) | job | Rolling aggregation over Metrics and Lables according to specifications | data-prep |
