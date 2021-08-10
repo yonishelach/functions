@@ -294,7 +294,7 @@ class BatchProcessor:
     def run(self):
 
         try:
-            endpoints = self.db.list_endpoints(self.project)
+            endpoints = self.db.list_model_endpoints(self.project)
         except Exception as e:
             logger.error("Failed to list endpoints", exc=e)
             return
