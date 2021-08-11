@@ -358,12 +358,12 @@ class BatchProcessor:
                     drift_measure=drift_measure,
                 )
 
-                if drift_status == "POSSIBLE_DRIFT" or drift_status == "DRIFT_DETECTED":
-                    self.v3io.stream.put_records(
-                        container=self.stream_container,
-                        stream_path=self.stream_path,
-                        records=[{"drift_status": drift_status, **drift_result}],
-                    )
+                # if drift_status == "POSSIBLE_DRIFT" or drift_status == "DRIFT_DETECTED":
+                #     self.v3io.stream.put_records(
+                #         container=self.stream_container,
+                #         stream_path=self.stream_path,
+                #         records=[{"drift_status": drift_status, **drift_result}],
+                #     )
 
                 self.v3io.kv.update(
                     container=self.kv_container,
