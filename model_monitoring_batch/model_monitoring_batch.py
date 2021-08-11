@@ -326,7 +326,7 @@ class BatchProcessor:
 
                 logger.info(f"Now processing {full_path}")
 
-                endpoint = self.db.get_endpoint(
+                endpoint = self.db.get_model_endpoint(
                     project=self.project, endpoint_id=endpoint_id
                 )
 
